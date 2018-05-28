@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+    <string name="tv_menu_0">模块1</string>
+    <string name="tv_menu_1">模块2</string>
+    <string name="tv_menu_2">模块3</string>
+    <string name="tv_menu_3">模块4</string>
+    <string name="tv_menu_4">模块5</string>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/line_height_15dp"
+        android:layout_marginRight="@dimen/line_height_15dp"
+        android:layout_marginBottom="15dp"
+        >
+
+        <TextView
+            android:id="@+id/ceshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/line_height_10dp"
+            android:text="ceshi"/>
+        <FrameLayout
+            android:id="@+id/rl"
+            android:layout_width="60dip"
+            android:layout_height="35dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/line_height_20dp"
+            android:layout_marginRight="@dimen/line_height_20dp"
+            android:layout_marginTop="@dimen/line_height_5dp"
+            >
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/roundCornerProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:rcProgress="0"
+                app:rcMax="100"
+                app:rcRadius="5dp"
+                app:rcBackgroundPadding="0dp"
+                app:rcReverse="false"
+                app:rcProgressColor="#99CCFF"
+                app:rcBackgroundColor="#666666"
+                app:rcSecondaryProgressColor="#00000000"
+                />
+            <TextView
+                android:id="@+id/proTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

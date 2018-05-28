@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <declare-styleable name="RadarScanView">
+    <attr name="circleColor" format="color"/>
+    <attr name="innerCircleColor" format="color" />
+    <attr name="layerColor" format="color" />
+    <attr name="innerTextColor" format="color" />
+    <attr name="innerTextSize" format="integer" />
+    <attr name="radarShaderColor1" format="color" />
+    <attr name="radarShaderColor2" format="color" />
+    <attr name="radarLineColor" format="color" />
+    <attr name="borderWidth" format="integer" />
+    </declare-styleable>
+
+    <!--自定义下载进度条View-->
+    <declare-styleable name="FlikerProgressBar">
+        <attr name="textSize" format="dimension"/>
+        <attr name="loadingColor" format="color"/>
+        <attr name="stopColor" format="color"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="borderWidth1" format="dimension"/>
+
+    </declare-styleable>
+    <declare-styleable name="StickNavLayout">
+        <!--默认是否悬停tab-->
+        <attr name="isStickNav" format="boolean" />
+        <!--距离悬浮的位置-->
+        <attr name="stickOffset" format="dimension" />
+    </declare-styleable>
+
+</resources>

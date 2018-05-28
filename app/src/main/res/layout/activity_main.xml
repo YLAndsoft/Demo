@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_menu"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:id="@+id/main_menu_table"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/ll_menu_0"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_menu_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_home_actionbar0" />
+
+            <TextView
+                android:id="@+id/tv_menu_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="@string/tv_menu_0"
+                android:textColor="@color/menu_tab_normal_color"
+                android:textSize="@dimen/txt_verysmall_10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_menu_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_actionbar1" />
+
+            <TextView
+                android:id="@+id/tv_menu_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="@string/tv_menu_1"
+                android:textColor="@color/menu_tab_normal_color"
+                android:textSize="@dimen/txt_verysmall_10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_menu_2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_menu_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_actionbar_select2" />
+
+            <TextView
+                android:id="@+id/tv_menu_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="@string/tv_menu_2"
+                android:textColor="@color/systembar_color"
+                android:textSize="@dimen/txt_verysmall_10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_menu_3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_menu_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_actionbar3" />
+
+            <TextView
+                android:id="@+id/tv_menu_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="@string/tv_menu_3"
+                android:textColor="@color/menu_tab_normal_color"
+                android:textSize="@dimen/txt_verysmall_10sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/ll_menu_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_menu_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_home_actionbar4" />
+
+                <TextView
+                    android:id="@+id/tv_menu_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dip"
+                    android:text="@string/tv_menu_4"
+                    android:textColor="@color/menu_tab_normal_color"
+                    android:textSize="@dimen/txt_verysmall_10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/home_txt_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_above="@+id/main_menu_table"
+        android:background="@color/line_color"
+        android:visibility="gone" />
+    <FrameLayout
+        android:id="@+id/fl_menu_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/home_txt_line" />
+
+    <FrameLayout
+        android:id="@+id/fl_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/home_txt_line" />
+
+
+</RelativeLayout>

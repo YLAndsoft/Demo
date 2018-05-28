@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="system_bar_color">#000</color><!--系统主题颜色-->
+    <color name="transparent">#00000000</color><!--系统主题颜色-->
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPro">#99CCFF</color>
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="systembar_color">#714df6</color>
+    <color name="white">#ffffff</color>
+    <color name="menu_tab_normal_color">#666666</color>
+    <color name="line_color">#efefef</color>
+
+    <color name="background_tab_pressed">#00000000</color>
+    <color name="activity_bg_white">#ffffffff</color>
+    <color name="text_black_light">#ff5c5e61</color>
+
+    <color name="visible_color1">#FF6C00</color>
+    <color name="status_pink">#880e4f</color>        <!-- 900 -->
+    <color name="action_pink">#e91e63</color>        <!-- 500 -->
+    <color name="window_bg_pink">#f06292</color>     <!-- 300 -->
+    <color name="navigation_pink">#c2185b</color>    <!-- 700 -->
+    <color name="bg_pink">#ec407a</color>    <!-- 400 -->
+    <color name="fg_pink">#fce4ec</color>    <!-- 50 -->
+    <color name="control_normal_pink">#fce4ec</color>    <!-- 50 -->
+    <color name="control_highlight_pink">#f48fb1</color>    <!-- 200 -->
+    <color name="control_activated_pink">#c51162</color>    <!-- A700 -->
+    <color name="button_normal_pink">#ec407a</color> <!-- 400 -->
+    <color name="actionbar_bg">@color/app_main_red</color>
+    <color name="app_main_red">#FFE3493D</color>
+    <color name="transparent_black">#33000000</color>
+    <color name="color_gray_eaeaea">#eaeaea</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_black_d9d9d9">#d9d9d9</color>
+    <color name="color_purple_bd6aff">#bd6aff</color>
+    <color name="GreyWhite_has_alpha">#66FAFAFA</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+
+</resources>

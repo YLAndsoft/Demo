@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.YLAndsoft'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
+    defaultConfig {
+        applicationId "com.fyl.demo"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // dex突破65535的限制
+        multiDexEnabled true
+        // 默认是umeng的渠道
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+    }
+    /*//签名
+    signingConfigs {
+        debugConfig {
+            storeFile file("C:/Users/DN/Desktop/test.keystore")      //签名文件
+            storePassword "android"
+            keyAlias "android"
+            keyPassword "android"  //签名密码
+        }
+        release{
+            storeFile file("C:/Users/DN/Desktop/test.keystore")      //签名文件
+            storePassword "android"
+            keyAlias "android"
+            keyPassword "android"  //签名密码
+        }
+    }*/
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // 移除无用的resource文件
+            //shrinkResources true
+            // 自定义输出配置
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为wooyun_v1.0_wandoujia.apk
+                        def fileName = "wooyun_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+    productFlavors {
+        vivo {}
+        xiaomi {}
+        nh360 {}
+        baidu {}
+        wandoujia {}
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [Pack_CHANNEL: name]
+    }
+}
+
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:23.1.0'
+}
+
+dependencies {
+    /*在android {…}这个元素之外，配置此模块的依赖。*/
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'org.xutils:xutils:3.5.0'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    compile 'com.arialyy.aria:aria-core:3.3.5'
+    annotationProcessor 'com.arialyy.aria:aria-compiler:3.3.5'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.github.YLAndsoft:BaseProject:v1.0.2'
+    compile files('libs/hyphenatechat_3.2.3.jar')
+}
