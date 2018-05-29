@@ -509,19 +509,19 @@ public class SystemBarTintManager {
         }
 
         /**
-         * Get the layout inset for any system UI that appears at the top of the screen.
+         * Get the lv_footer inset for any system UI that appears at the top of the screen.
          *
          * @param withActionBar True to include the height of the action bar, False otherwise.
-         * @return The layout inset (in pixels).
+         * @return The lv_footer inset (in pixels).
          */
         public int getPixelInsetTop(boolean withActionBar) {
             return (mTranslucentStatusBar ? mStatusBarHeight : 0) + (withActionBar ? mActionBarHeight : 0);
         }
 
         /**
-         * Get the layout inset for any system UI that appears at the bottom of the screen.
+         * Get the lv_footer inset for any system UI that appears at the bottom of the screen.
          *
-         * @return The layout inset (in pixels).
+         * @return The lv_footer inset (in pixels).
          */
         public int getPixelInsetBottom() {
             if (mTranslucentNavBar && isNavigationAtBottom()) {
@@ -532,9 +532,9 @@ public class SystemBarTintManager {
         }
 
         /**
-         * Get the layout inset for any system UI that appears at the right of the screen.
+         * Get the lv_footer inset for any system UI that appears at the right of the screen.
          *
-         * @return The layout inset (in pixels).
+         * @return The lv_footer inset (in pixels).
          */
         public int getPixelInsetRight() {
             if (mTranslucentNavBar && !isNavigationAtBottom()) {

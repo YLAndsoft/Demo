@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="maintab_topbar_bg_color">#18131A</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="text_black_light">#ff5c5e61</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="start_download_secondary">#079520</color>
+    <color name="start_download_progress">#27BA4F</color>
+    <color name="menu_tab_normal_color">#666666</color>
+</resources>
